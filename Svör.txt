@@ -1,0 +1,2 @@
+1.	Það er hægt að líma function við elementið t.d.: <a onclick="hide()">, það er líka hægt að búa til element í Javascript og binda það við event sem kalla síðan í function saman (element.onevent = functionName), og seinasta og besta leiðin er að nota "addEventListener", sem tekur inn 3 properties til að fá bestu niðurstöðurnar (element.addEventListener('event', functionName, Boolean(true/false)).
+2.	

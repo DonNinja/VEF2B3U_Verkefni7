@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dæmi 1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<input type="text" id="texti" />
+	<div id="nyrtexti"></div>
+
+	<script type="text/javascript">
+		"use strict";
+		function checkText() {
+			var elMsg = document.getElementById('nyrtexti');
+			if (this.value.length < 5) {
+				elMsg.textContent = 'Textinn er minna en 5 stafir';
+			}
+			else {
+				elMsg.textContent = 'Textinn er 5 stafir eða meir';
+			}
+		}
+		var elTexti = document.getElementById('texti');
+		elTexti.addEventListener('blur', checkText, false);
+	</script>
+</body>
+
+</html>
