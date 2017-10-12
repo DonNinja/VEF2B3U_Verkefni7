@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dæmi 2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 id="element">Með callback</h1>
+	<h2 id="h21">Með callback</h2>
+
+	<h1 id="element2" style="display: none;">Án callback</h1>
+	<h2 id="h22" style="display: none;">Án callback</h2>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		"use strict";
+		$('#element').fadeOut('slow', function() {
+			$('#h21').fadeOut('slow', function() {
+				$('#element2').fadeIn('slow');
+				$('#h22').fadeIn('slow');
+			});
+		});
+	</script>
+</body>
+</html>

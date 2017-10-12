@@ -1,2 +1,3 @@
-1.	Það er hægt að líma function við elementið t.d.: <a onclick="hide()">, það er líka hægt að búa til element í Javascript og binda það við event sem kalla síðan í function saman (element.onevent = functionName), og seinasta og besta leiðin er að nota "addEventListener", sem tekur inn 3 properties til að fá bestu niðurstöðurnar (element.addEventListener('event', functionName, Boolean(true/false)).
-2.	
+﻿1.	Það er hægt að líma function við elementið t.d.: <a onclick="hide()">, það er líka hægt að búa til element í Javascript og binda það við event sem kalla síðan í function saman (element.onevent = functionName), og seinasta og besta leiðin er að nota "addEventListener", sem tekur inn 3 properties til að fá bestu niðurstöðurnar (element.addEventListener('event', functionName, Boolean(true/false)), þessi virkar samt ekki á Internet Explorer 8 og eldra, en hverjum er ekki sama um það?
+2.	Callback er fall sem bíður með að keyra eftir að annað fall er klárar það sem það á að gera, til þess að gera callback lætur maður fallið inn í annað fall sem parameter.
+3.	
