@@ -11,7 +11,7 @@
 	<script type="text/javascript">
 		"use strict";
 		function checkText() {
-			var elMsg = document.getElementById('nyrtexti');
+			var elMsg = document.getElementsByTagName('div')[0];
 			if (this.value.length < 5) {
 				elMsg.textContent = 'Textinn er minna en 5 stafir';
 			}
