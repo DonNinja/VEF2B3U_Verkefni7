@@ -2,3 +2,4 @@
 2.	Callback er fall sem bíður með að keyra eftir að annað fall er klárar það sem það á að gera, til þess að gera callback lætur maður fallið inn í annað fall sem parameter. Kóðasýnidæmi: http://tsuts.tskoli.is/2t/2605993489/VEF2B3U/Verkefni%207/daemi2.html Kóðinn sjálfur: https://github.com/DonNinja/VEF2B3U_Verkefni7/blob/master/daemi2.html
 3.	EventLoop er þannig að það bíður eftir að það er ekkert í Call Stackinu og keyrir síðan næstu skipun, alveg sama hvað það eru margar að bíða.
 4.	
+5.	"false" þýðir að það læsir eventið við elementið sem það finnur það í, en "true" þýðir að eventið keyrir þegar maður ýtir á eitthvað sem er í kringum 
