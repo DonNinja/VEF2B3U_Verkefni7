@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dæmi 5 preventDefault</title>
+</head>
+<body>
+	<p><a href="http://www.tskoli.is/" target="_blank">Þetta virkar að fara á tskoli.is (ekki með preventDefault)</a></p>
+	<a href="http://www.tskoli.is/" target="_blank">Þetta virkar ekki að fara á tskoli.is (er með preventDefault)</a>
+
+	<script type="text/javascript">
+		"use strict";
+		document.getElementsByTagName('a')[1].addEventListener("click", function() { event.preventDefault(); });
+	</script>
+</body>
+</html>
