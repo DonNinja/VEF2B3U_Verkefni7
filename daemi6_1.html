@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dæmi 6 stopPropagation</title>
+</head>
+<body>
+	<div>Sýnir "texti 1 var valinn"
+		<p><span>Sýnir bæði "texti 1 var valinn" og "texti 2 var valinn"</p>
+			<p>Sýnir bara "texti 3 var valinn"</p>
+		</span>
+	</div>
+
+	<script>
+		"use strict";
+		var text1 = document.getElementsByTagName('div')[0];
+		var text2 = document.getElementsByTagName('span')[0];
+		var text3 = document.getElementsByTagName('p')[1];
+
+		text1.addEventListener("click", function() { alert("div var valið"); }, false);
+		text2.addEventListener("click", function() { alert("span var valið"); }, false);
+		text3.addEventListener("click", function() { event.stopPropagation(); alert("p var valið"); }, false);
+	</script>
+</body>
+</html>

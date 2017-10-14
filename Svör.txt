@@ -3,5 +3,6 @@
 3.	EventLoop er þannig að það bíður eftir að það er ekkert í Call Stackinu og keyrir síðan næstu skipun, alveg sama hvað það eru margar að bíða.
 4.	Vefsíðan: http://tsuts.tskoli.is/2t/2605993489/VEF2B3U/Verkefni%207/daemi4.html Kóðinn sjálfur: https://github.com/DonNinja/VEF2B3U_Verkefni7/blob/master/daemi4.html
 5.	"false" þýðir að það læsir eventið við elementið sem það finnur það í, en "true" þýðir að eventið keyrir þegar maður ýtir á eitthvað sem er í kringum
-6.	a.: 
-	b.: preventDefault hættir við eitthvað ef það er hægt að hætta við það°. Dæmi um notkun: http://tsuts.tskoli.is/2t/2605993489/VEF2B3U/Verkefni%207/daemi5_2.html Kóðinn sjálfur: https://github.com/DonNinja/VEF2B3U_Verkefni7/blob/master/daemi5_2.html
+6.	a.: stopPropagation hættir við aðrar aðferðir sem eiga líka við það sem maður smellir á.  Dæmi um notkun: http://tsuts.tskoli.is/2t/2605993489/VEF2B3U/Verkefni%207/daemi5_1.html Kóðinn sjálfur: https://github.com/DonNinja/VEF2B3U_Verkefni7/blob/master/daemi5_1.html
+	b.: preventDefault hættir við eitthvað ef það er hægt að hætta við það. Dæmi um notkun: http://tsuts.tskoli.is/2t/2605993489/VEF2B3U/Verkefni%207/daemi5_2.html Kóðinn sjálfur: https://github.com/DonNinja/VEF2B3U_Verkefni7/blob/master/daemi5_2.html
+7. 
