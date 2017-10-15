@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dæmi 7 Quiz</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>Who is the queen of england?</div>
+	<div id="ansurs">
+		<li class="swar" style="list-style: none; margin: 1em;" class="redness"><a href="http://www.tskoli.is/1">Margaret Thatcher</a></li>
+		<li class="swar" style="list-style: none; margin: 1em;" class="redness"><a href="http://www.tskoli.is/2">Theresa May</a></li>
+		<li class="swar" style="list-style: none; margin: 1em;" class="redness"><a href="http://www.tskoli.is/3">Elizabeth II</a></li>
+		<li class="swar" style="list-style: none; margin: 1em;" class="redness"><a href="http://www.tskoli.is">Zara Tindall</a></li>
+	</div>
+	<script type="text/javascript">
+		"use strict";
+
+		function getTarget(e) {
+			return e.target || e.srcElement;
+		}
+		function doRed(e) {
+			var target, elQuestion;
+			target = getTarget(e);
+			elQuestion = target.parentNode;
+			elQuestion.setAttribute('style', 'background-color: red; list-style: none; margin: 1em;');
+			e.preventDefault();
+		}
+
+		var svar = document.getElementById('ansurs');
+
+		svar.addEventListener('click', function(e) {doRed(e);}, false);
+	</script>
+</body>
+</html>

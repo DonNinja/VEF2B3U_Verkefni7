@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iz gon' be deleted</title>
+</head>
+<body>
+	<ul id="shoppingList">
+		<li class="complete"><a href="itemDone.php?id=1"><em>fresh</em> figs</a></li>
+		<li class="complete"><a href="iemDone.php?id=2">pine nuts</a></li>
+		<li class="complete"><a href="iemDone.php?id=3">honey</a></li>
+		<li class="complete"><a href="iemDone.php?id=4">balsamic vinegar</a></li>
+	</ul>
+	<script type="text/javascript">
+		"use strict";
+
+		function getTarget(e) {
+			return e.target || e.srcElement;
+		}
+		function itemDone(e) {
+			var target, elParent, elGrandparent;
+			target = getTarget(e);
+			elParent = target.parentNode;
+			elParent.setAttribute('style', 'background-color: red;');
+			e.preventDefault();
+		}
+
+		var el = document.getElementById('shoppingList');
+
+		el.addEventListener('click', function(e) {itemDone(e);}, false);
+	</script>
+</body>
+</html>
